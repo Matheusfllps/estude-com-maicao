@@ -2,6 +2,8 @@
 
 Plataforma de mentoria para concursos militares e policiais: landing page, área do aluno e painel do administrador.
 
+🌐 **Site publicado:** https://matheusfllps.github.io/estude-com-maicao/plataforma.html
+
 O projeto está disponível em **dois formatos**:
 
 | Arquivo | Descrição |
