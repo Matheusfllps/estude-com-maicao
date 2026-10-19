@@ -2,18 +2,19 @@
 
 Plataforma de mentoria para concursos militares e policiais: landing page, área do aluno e painel do administrador.
 
-🌐 **Site publicado:** https://matheusfllps.github.io/estude-com-maicao/plataforma.html
+🌐 **Site publicado:** https://matheusfllps.github.io/estude-com-maicao/
 
 O projeto está disponível em **dois formatos**:
 
 | Arquivo | Descrição |
 | --- | --- |
-| `plataforma.html` | **Arquivo único** (recomendado). HTML + CSS + JavaScript embutidos, com as 4 telas (landing, login, área do aluno e painel do admin). Basta abrir no navegador ou hospedar. |
-| `index.html`, `matricula.html`, `aluno.html`, `admin.html`, `app.js`, `style.css` | Versão original multi-página, com os arquivos separados. |
+| `index.html` | **Arquivo único** (recomendado). HTML + CSS + JavaScript embutidos, com as 4 telas (landing, login, área do aluno e painel do admin). Basta abrir no navegador ou hospedar. |
+| `v1/index.html`, `v1/matricula.html`, `v1/aluno.html`, `v1/admin.html`, `v1/app.js`, `v1/style.css` | Versão original multi-página, com os arquivos separados. |
+| `plataforma.html` | Apenas um redirecionamento para `index.html` (mantém funcionando links antigos, com o `#hash` preservado). |
 
 ## Como usar
 
-1. Abra `plataforma.html` no navegador (duplo clique) — ou hospede e compartilhe o link.
+1. Abra `index.html` no navegador (duplo clique) — ou hospede e compartilhe o link.
 2. A primeira tela é a landing page da mentoria.
 3. Clique em **Já sou aluno** para entrar.
 
@@ -69,8 +70,8 @@ Se o navegador bloquear o armazenamento (situação comum ao abrir o arquivo dir
 
 O arquivo é 100% autônomo (as fontes do Google são apenas um enfeite, com fallback para as fontes do sistema). Algumas opções gratuitas:
 
-- **Netlify Drop**: arraste `plataforma.html` em `app.netlify.com/drop`.
-- **GitHub Pages** (requer repositório público no plano gratuito): *Settings → Pages → Deploy from branch → main / root*. O endereço fica `https://matheusfllps.github.io/estude-com-maicao/plataforma.html`.
+- **GitHub Pages** (já ativo neste repositório): o site fica em `https://matheusfllps.github.io/estude-com-maicao/`. Todo `git push` na branch `main` republica em ~1 minuto.
+- **Netlify Drop**: arraste `index.html` em `app.netlify.com/drop`.
 - **Cloudflare Pages** ou **Vercel**: mesma ideia.
 
 > **WhatsApp no iPhone:** o arquivo `.html` enviado como anexo abre no visualizador do WhatsApp, que **não executa JavaScript**. Para o link funcionar no celular, compartilhe a **URL publicada**, e não o arquivo.
@@ -78,11 +79,12 @@ O arquivo é 100% autônomo (as fontes do Google são apenas um enfeite, com fal
 ## Estrutura
 
 ```
-plataforma.html      arquivo único (landing + login + aluno + admin)
-index.html           login (versão original)
-matricula.html       landing page (versão original)
-aluno.html           área do aluno (versão original)
-admin.html           painel do administrador (versão original)
-app.js               lógica da versão original
-style.css            estilos da versão original
+index.html           arquivo único (landing + login + aluno + admin)  ← site publicado
+plataforma.html      redireciona para index.html (compatibilidade com links antigos)
+v1/index.html        login (versão original)
+v1/matricula.html    landing page (versão original)
+v1/aluno.html        área do aluno (versão original)
+v1/admin.html        painel do administrador (versão original)
+v1/app.js            lógica da versão original
+v1/style.css         estilos da versão original
 ```
