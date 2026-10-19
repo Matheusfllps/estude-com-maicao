@@ -1,0 +1,12 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Painel do administrador | Estude com Maicão</title></head>
+<body data-p="admin"><header class="top"><div class="wrap bar"><span class="logo">Estude com Maicão · Admin</span><button class="btn ln" id="sair">SAIR</button></div></header>
+<main class="wrap s"><div class="tabs"><button class="tab on" data-t="a">Alunos</button><button class="tab" data-t="c">Conteúdo</button></div>
+<section id="t-a" class="s"><h2>Cadastrar aluno</h2>
+<form id="fa" class="form"><label>Nome<input id="an" required></label><label>Login<input id="al" required></label><label>Senha (mín. 6)<input id="as" type="text" minlength="6" required></label><button class="btn">CADASTRAR</button></form>
+<h2>Alunos</h2><div class="ov"><table><thead><tr><th>Nome</th><th>Login</th><th>Status</th><th>Ações</th></tr></thead><tbody id="ta"></tbody></table></div>
+<p style="margin-top:20px"><button class="btn ln" id="pwa">ALTERAR MINHA SENHA</button></p></section>
+<section id="t-c" class="s" hidden><h2>Pastas</h2><div id="pl"></div>
+<form id="fp" class="form"><label>Nova pasta<input id="pn" required></label><button class="btn">CRIAR PASTA</button></form>
+<h2>Enviar conteúdo</h2>
+<form id="fc" class="form"><label>Pasta<select id="cp" required></select></label><label>Título<input id="ct" required></label><label>Link (YouTube, Drive…)<input id="cu" pattern="https?://.+" placeholder="https://"></label><label>ou arquivo (PDF, vídeo…)<input id="cf" type="file"></label><button class="btn">PUBLICAR</button></form>
+<h2>Conteúdo publicado</h2><ul id="il" class="l"></ul></section></main><script src="app.js"></script></body></html>
